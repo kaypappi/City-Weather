@@ -15,9 +15,9 @@ const updatedetails = async (search) => {
             let { Details, weatherDet } = response
             console.log(Details,weatherDet)
             let sky=`${weatherDet.IsDayTime? 'day.svg': 'night.svg'}`
-            let html = `<img name='card'src="../img/${sky}" alt="" class="time card-img-top">
+            let html = `<img name='card'src="../City-Weather/img/${sky}" alt="" class="time card-img-top">
         <div class="icon bg-light mx-auto text-center">
-            <img src='../img/icons/${weatherDet.WeatherIcon}.svg'>
+            <img src='../City-Weather/img/icons/${weatherDet.WeatherIcon}.svg'>
         </div>
         <div class="text-muted text-uppercase text-center details">
             <h5 class="my-3">${Details.EnglishName}</h5>
